@@ -23,7 +23,9 @@ Rice segmentation/
    pip install opencv-python scikit-image numpy matplotlib pillow jupyter
    ```
 
-2. Place your rice seed images in the `data/raw/` directory
+2. **Capture your rice seed images** (see [IMAGE_ACQUISITION_GUIDE.md](IMAGE_ACQUISITION_GUIDE.md) for detailed instructions)
+
+3. Place your rice seed images in the `data/raw/` directory
 
 3. Run the notebooks in order:
    - `01_data_exploration.ipynb` - Explore and visualize your data
