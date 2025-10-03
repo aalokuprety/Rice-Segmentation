@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data files (don't commit large datasets)
+data/raw/*.jpg
+data/raw/*.jpeg
+data/raw/*.png
+data/raw/*.bmp
+data/raw/*.tiff
+data/processed/
+
+# Results and outputs
+results/
+batch_results/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Model files (uncomment if you have large model files)
+# models/*.h5
+# models/*.pkl
+# models/*.pth
+
+# Keep empty directories
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!results/.gitkeep
+!models/.gitkeep
