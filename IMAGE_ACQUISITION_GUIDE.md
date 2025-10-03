@@ -4,10 +4,11 @@
 
 ### 1. **Background**
 - ✅ **Use a contrasting, uniform background**
-  - Dark background (black/dark blue) works best for white/light rice
-  - White/light background works best for dark/colored rice varieties
+  - **For husked/paddy rice (brown/tan)**: White or light gray background recommended
+  - **For white/milled rice**: Dark background (black/dark blue) works best
   - Matte finish preferred (avoid glossy surfaces that create reflections)
   - Consider using a lightbox or photography backdrop
+  - **For variety comparison**: Use the SAME background for all samples
 
 ### 2. **Lighting**
 - ✅ **Diffused, even lighting** is critical
@@ -153,15 +154,25 @@ Ideal for:
 
 ## Example File Naming Convention
 
+**For variety/genotype comparison:**
 ```
-rice_white_well_separated_001.jpg
-rice_white_well_separated_002.jpg
-rice_white_touching_001.jpg
-rice_white_high_density_001.jpg
-rice_brown_well_separated_001.jpg
+rice_varietyA_rep001.jpg
+rice_varietyA_rep002.jpg
+rice_varietyB_rep001.jpg
+rice_varietyB_rep002.jpg
+rice_varietyC_rep001.jpg
+rice_varietyC_rep002.jpg
 ```
 
-Or simpler:
+Or with descriptive names:
+```
+sample_genotype1_001.jpg
+sample_genotype2_001.jpg
+sample_control_001.jpg
+sample_hybrid_001.jpg
+```
+
+Simple numbering:
 ```
 sample_001.jpg
 sample_002.jpg
