@@ -10,7 +10,22 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage import measure, morphology, filters, segmentation
-from skimage.feature import peak_local_maxima
+try:
+    from skimage.feature import peak_local_maxima
+except ImportError:
+    from scipy.ndimage import maximum_filter
+    from scipy.ndimage import generate_binary_structure
+    def peak_local_maxima(image, min_distance=1, threshold_abs=0, exclude_border=True):
+        """Fallback implementation for peak_local_maxima."""
+        struct = generate_binary_structure(2, 2)
+        local_max = maximum_filter(image, footprint=struct) == image
+        background = (image == 0)
+        eroded_background = morphology.binary_erosion(background, structure=struct, border_value=1)
+        detected_peaks = local_max ^ eroded_background
+        if threshold_abs > 0:
+            detected_peaks = detected_peaks & (image > threshold_abs)
+        peaks = np.column_stack(np.where(detected_peaks))
+        return peaks
 from skimage.segmentation import watershed
 from scipy import ndimage
 import pandas as pd
